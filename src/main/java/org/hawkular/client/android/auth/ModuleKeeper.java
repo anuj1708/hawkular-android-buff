@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Red Hat, Inc. and/or its affiliates
+ * Copyright 2015-2016 Red Hat, Inc. and/or its affiliates
  * and other contributors as indicated by the @author tags.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,22 +14,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.hawkular.client.android.backend;
+package org.hawkular.client.android.auth;
 
-/**
- * Backend endpoints.
- *
- * Default endpoint configurations, such as a demo server.
- */
-public final class BackendEndpoints {
-    private BackendEndpoints() {
-    }
+import java.util.HashMap;
+import java.util.Map;
 
-    public static final class Demo {
-        private Demo() {
-        }
+import org.jboss.aerogear.android.authorization.AuthzModule;
 
-        public static final String HOST = "192.168.1.12";
-        public static final String PORT = "8080";
-    }
+
+public final class ModuleKeeper {
+    public static Map<String, AuthzModule> modules = new HashMap<String, AuthzModule>();
 }

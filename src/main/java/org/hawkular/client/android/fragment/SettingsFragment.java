@@ -47,7 +47,7 @@ public final class SettingsFragment extends PreferenceFragment implements Prefer
 
         setUpSettings();
 
-        setUpListeners();
+       // setUpListeners();
     }
 
     private void setUpBindings() {
@@ -63,7 +63,7 @@ public final class SettingsFragment extends PreferenceFragment implements Prefer
     }
 
     private void setUpListeners() {
-        findPreference(accountKey).setOnPreferenceClickListener(this);
+        //findPreference(accountKey).setOnPreferenceClickListener(this);
     }
 
     @Override
